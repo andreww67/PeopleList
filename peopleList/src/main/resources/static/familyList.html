@@ -1,0 +1,42 @@
+<table class="table">
+	<tr>
+		<td>
+			<div ng-controller="FamilyController">
+				<div class="page-header">
+					<h1>Family List</h1>
+				</div>
+				<div class="alert alert-info" role="alert"
+					ng-hide="families &amp;&amp; families.length > 0">Empty
+					family list!</div>
+				<form class="form-horizontal" role="form"
+					ng-submit="addFamily(newFamily)">
+					<div class="form-group" ng-repeat="family in families">
+						<label> <input type="text" class="form-control"
+							ng-model="family.name" ng-change="updateFamily(family)" /><a
+							href="#familyGroup/{{family.id}}">Add people to this family</a>
+						</label>
+						<div class="col-xs-2">
+							<button class="pull-right btn btn-danger" type="button"
+								title="Delete" ng-click="deleteFamily(family)">
+								<span class="glyphicon glyphicon-trash"></span>
+							</button>
+						</div>
+					</div>
+					<hr />
+					<div class="input-group">
+						<input type="text" class="form-control" ng-model="newFamily"
+							placeholder="Enter a new family name..." /> <span
+							class="input-group-btn">
+							<button class="btn btn-default" type="submit"
+								ng-disabled="!newFamily" title="Add">
+								<span class="glyphicon glyphicon-plus"></span>
+							</button>
+						</span>
+					</div>
+				</form>
+			</div>
+			<!-- Family Controller -->
+			</div>
+		</td>
+	</tr>
+</table>

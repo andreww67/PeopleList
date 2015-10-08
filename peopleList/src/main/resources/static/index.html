@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet"
+	href="./bower_components/bootstrap-css-only/css/bootstrap.min.css" />
+</head>
+
+<body ng-app="myApp">
+	<div class="container">
+
+		<a href="#peopleList">People List</a>&nbsp;&nbsp;&nbsp;&nbsp; <a
+			href="#familyList">Family List</a>&nbsp;&nbsp;&nbsp;&nbsp;
+		<!--  
+	<div class="check-element animate-show" ng-hide="showme">
+  	<div class="check-element animate-show" ng-show="showme">
+  	-->
+		<div ng-view></div>
+
+
+	</div>
+	<!-- Container -->
+	<script type="text/javascript"
+		src="./bower_components/angular/angular.min.js"></script>
+	<script type="text/javascript"
+		src="./bower_components/angular-resource/angular-resource.min.js"></script>
+	<script type="text/javascript"
+		src="./bower_components/angular-route/angular-route.min.js"></script>
+	<script type="text/javascript" src="./app/app.js"></script>
+	<script type="text/javascript" src="./app/controllers.js"></script>
+	<script type="text/javascript" src="./app/services.js"></script>
+</body>
+</html>

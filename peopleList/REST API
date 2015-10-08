@@ -1,0 +1,27 @@
+Operation summary
+
+Here are the available REST API operations:
+
+People
+
+Method		Request URI						Description
+
+GET			/People/						Gets All the people
+GET			/People/{id}					Gets a person
+POST		/People/						Creates a person
+PUT			/People/{id}					Updates a person
+DELETE		/People/{id}					Deletes a person
+POST		/People/{id}/addFamily/{id}		Adds person into family
+GET			/People/{id}/getFamilies/		Gets all families this person joined
+
+Families
+
+Method		Request URI						Description
+
+GET			/families/						Gets All the family
+GET			/families/{id}					Gets a family
+POST		/families/						Creates a family
+PUT			/families/{id}					Updates a family
+DELETE		/families/{id}					Deletes a family
+POST		/families/{id}/addPerson/{id}	Adds person into family
+GET			/families/{id}/getPeople/		Gets all people in this family 
