@@ -1,6 +1,6 @@
 # People And Family List
 
-Thsi is a Basic web app uses Spring REST API to create, read, update, delete and group "People" and "Families".  
+This is a basic web application uses Spring REST API to create, read, update, delete and group "People" and "Families".  
 
 # Frameworks
 
